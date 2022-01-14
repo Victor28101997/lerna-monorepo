@@ -5,7 +5,7 @@ const port = process.env.PORT || 5000;
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("I'm a backend server");
+  res.send("I'm a backend server and I'm opening on port", port);
 });
 
 app.listen(port, (err) => {
